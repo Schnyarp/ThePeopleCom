@@ -1,238 +1,291 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ThePeople.com – Premium Domain For Sale</title>
-    <meta name="description" content="ThePeople.com is a premium, memorable domain now available for purchase. The perfect name for your next media, community, or advocacy project.">
-    <style>
-        body {
-            font-family: 'Segoe UI', Arial, sans-serif;
-            background: #f7f8fa;
-            margin: 0;
-            padding: 0;
-            color: #223040;
-        }
-        header {
-            background: #2c2c4d;
-            color: #fff;
-            padding: 2.1rem 0 1.4rem 0;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.6rem;
-            letter-spacing: 1px;
-        }
-        header p {
-            margin: 0.7rem 0 0 0;
-            font-size: 1.18rem;
-            color: #b7b7e1;
-        }
-        main {
-            max-width: 700px;
-            margin: 2.5rem auto;
-            background: #fff;
-            border-radius: 12px;
-            box-shadow: 0 4px 24px rgba(44,44,77,0.09);
-            padding: 2.5rem 2rem 2rem 2rem;
-        }
-        .for-sale {
-            text-align: center;
-            font-size: 2.1rem;
-            margin-bottom: 2rem;
-            color: #2c2c4d;
-            font-weight: 700;
-        }
-        .features {
-            margin: 2rem 0;
-        }
-        .features h2 {
-            color: #2c2c4d;
-            font-size: 1.17rem;
-            margin-bottom: 1rem;
-        }
-        .features ul {
-            list-style: none;
-            padding: 0;
-        }
-        .features li {
-            margin: 0.62rem 0;
-            padding-left: 1.2rem;
-            position: relative;
-        }
-        .features li::before {
-            content: "✔";
-            color: #605cff;
-            font-size: 1.1em;
-            position: absolute;
-            left: 0;
-        }
-        .inquiry-form-section {
-            margin: 2.5rem 0 0 0;
-            padding: 1.7rem 1.1rem 1.1rem 1.1rem;
-            background: #edeefd;
-            border-radius: 9px;
-        }
-        .inquiry-form-section h3 {
-            margin-top: 0;
-            color: #2c2c4d;
-            font-size: 1.12rem;
-            text-align: center;
-            margin-bottom: 1.08rem;
-        }
-        .info-article {
-            text-align: center;
-            margin-bottom: 1.7rem;
-            font-size: 1.13rem;
-            color: #2c2c4d;
-            font-style: italic;
-        }
-        .info-article a {
-            color: #605cff;
-            text-decoration: underline;
-        }
-        .contact-note {
-            max-width: 560px;
-            margin: 0 auto;
-            text-align: left;
-            font-size: 1rem;
-            color: #223040;
-        }
-        .contact-email {
-            display:inline-block;
-            margin-top:.5rem;
-            font-weight:700;
-            color:#0b63d6;
-            text-decoration:none;
-        }
-        .copy-btn {
-            margin-left:.6rem;
-            padding:.35rem .6rem;
-            font-size:.95rem;
-            border-radius:6px;
-            border:1px solid rgba(34,48,64,0.08);
-            background:#fff;
-            cursor:pointer;
-        }
-        ul.requirements {
-            margin-top:.6rem;
-            padding-left:1.1rem;
-        }
-        .note {
-            font-size:.95rem;
-            color:#555;
-            margin-top:.8rem;
-        }
-        footer {
-            text-align: center;
-            color: #b7b7e1;
-            font-size: 0.9rem;
-            padding: 1.6rem 0 0.7rem 0;
-        }
-        .small-print {
-            font-size: 0.85rem;
-            color: #6b6f76;
-            margin-top: .9rem;
-            text-align: center;
-        }
-        @media (max-width: 600px) {
-            main {
-                padding: 1.2rem 0.5rem 1rem 0.5rem;
-            }
-            .for-sale {
-                font-size: 1.4rem;
-            }
-            .inquiry-form-section {
-                padding: 1.1rem 0.3rem 0.5rem 0.3rem;
-            }
-            .info-article {
-                font-size: 1.02rem;
-            }
-        }
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ThePeople.com — Premium Domain For Sale</title>
+  <meta name="description" content="Premium domain ThePeople.com — ideal for community platforms, media, social apps, and civic services. Submit an offer to purchase." />
+  <meta property="og:title" content="ThePeople.com — Premium Domain For Sale" />
+  <meta property="og:description" content="Premium domain ThePeople.com — ideal for community platforms, media, social apps, and civic services. Contact domain@thepeople.com" />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#bfdfff" />
+
+  <link rel="icon" href="/favicon.ico" />
+
+  <style>
+    :root{
+      /* light blue + light red (blush) theme */
+      --bg-1: #e7f6ff;   /* very light blue */
+      --bg-2: #fff2f3;   /* very light blush */
+      --card: #ffffff;   /* card background (clean white) */
+      --accent-blue: #4aa3ff;
+      --accent-red: #ff7b85; /* light red/blush */
+      --muted: #6b7785;
+      --text: #0b1e27;   /* dark text for contrast */
+      --radius:12px;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      background: linear-gradient(180deg,var(--bg-1) 0%, var(--bg-2) 70%);
+      color:var(--text);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.45;
+      padding:28px;
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+    }
+
+    .container{
+      width:100%;
+      max-width:980px;
+      background: linear-gradient(180deg, rgba(255,255,255,0.95), rgba(255,255,255,0.98));
+      border-radius:var(--radius);
+      padding:28px;
+      box-shadow: 0 10px 30px rgba(11,28,40,0.06);
+      border:1px solid rgba(11,28,40,0.04);
+    }
+
+    header{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:16px;
+      margin-bottom:22px;
+    }
+
+    .brand{
+      display:flex;
+      gap:16px;
+      align-items:center;
+    }
+
+    .logo{
+      width:64px;
+      height:64px;
+      border-radius:12px;
+      background:linear-gradient(135deg,var(--accent-blue),var(--accent-red));
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-weight:800;
+      color:#fff;
+      font-size:18px;
+      letter-spacing:0.6px;
+      box-shadow: 0 6px 18px rgba(11,28,40,0.06);
+    }
+
+    h1{margin:0;font-size:28px;color:var(--text)}
+    p.lead{margin:4px 0 0;color:var(--muted);font-size:15px}
+
+    .grid{
+      display:grid;
+      grid-template-columns: 1fr 340px;
+      gap:24px;
+      align-items:start;
+    }
+
+    .card{
+      background:var(--card);
+      padding:18px;
+      border-radius:12px;
+      border:1px solid rgba(11,28,40,0.04);
+      box-shadow: 0 6px 18px rgba(11,28,40,0.04);
+    }
+
+    .features ul{margin:0;padding-left:18px;color:var(--muted)}
+    .features li{margin-bottom:8px}
+
+    .cta-row{display:flex;gap:12px;margin-top:16px;flex-wrap:wrap}
+    .btn{
+      display:inline-flex;
+      gap:10px;
+      align-items:center;
+      padding:10px 14px;
+      border-radius:10px;
+      font-weight:700;
+      cursor:pointer;
+      border:0;
+      text-decoration:none;
+    }
+
+    .btn-primary{
+      background:var(--accent-blue);
+      color:#fff;
+      box-shadow:0 8px 24px rgba(74,163,255,0.12);
+    }
+
+    .btn-ghost{
+      background:transparent;
+      border:1px solid rgba(255,123,133,0.14);
+      color:var(--accent-red);
+    }
+
+    .price{
+      font-size:20px;
+      font-weight:700;
+      color:var(--text);
+      margin-top:8px;
+    }
+
+    .contact-card{position:sticky; top:32px;}
+    .contact-email{font-weight:700;color:var(--accent-red); word-break:break-all;}
+
+    form label{display:block;font-size:13px;color:var(--muted);margin-bottom:6px}
+    form input, form textarea, form select{
+      width:100%;
+      padding:10px;
+      border-radius:8px;
+      border:1px solid rgba(11,28,40,0.06);
+      background: #fff;
+      color:var(--text);
+      font-size:14px;
+      margin-bottom:12px;
+    }
+    form textarea{min-height:110px; resize:vertical}
+
+    footer{margin-top:12px;color:var(--muted);font-size:13px; text-align:center}
+
+    @media (max-width:880px){
+      .grid{grid-template-columns:1fr;}
+      .contact-card{position:relative; top:auto}
+    }
+  </style>
 </head>
 <body>
+  <!--
+    index.html for ThePeople.com
+    Contact address used on this page: domain@thepeople.com
+    Updated color scheme: light blue + light red (blush) combination.
+    Static landing page — contact form composes an email via mailto: (no backend).
+  -->
+  <main class="container" role="main">
     <header>
-        <h1>ThePeople.com</h1>
-        <p>The Perfect Domain for Media, Community, or Advocacy Projects</p>
+      <div class="brand">
+        <div class="logo" aria-hidden="true">TP</div>
+        <div>
+          <h1>ThePeople.com</h1>
+          <p class="lead">Premium domain for media, community platforms, civic tech & social apps.</p>
+        </div>
+      </div>
+      <div style="text-align:right">
+        <div style="color:var(--muted);font-size:13px">For inquiries</div>
+        <div class="contact-email"><a href="mailto:domain@thepeople.com" style="color:inherit;text-decoration:none">domain@thepeople.com</a></div>
+      </div>
     </header>
-    <main>
-        <div class="for-sale">This premium domain is <strong>for sale</strong>!</div>
-        <section class="features">
-            <h2>Why Own ThePeople.com?</h2>
+
+    <section class="grid" aria-label="Main content">
+      <div>
+        <div class="card">
+          <h2 style="margin-top:0">Why ThePeople.com?</h2>
+          <p class="lead">Memorable, authoritative, and highly brandable — a standout domain for community-driven and media-led ventures. Great fit for:</p>
+
+          <div class="features" style="margin-top:12px">
             <ul>
-                <li>Extremely memorable, authoritative, and brandable for any media or community venture</li>
-                <li>Ideal for news organizations, advocacy platforms, social networks, community hubs, or civic engagement projects</li>
-                <li>Iconic .com extension for global reach and trust</li>
-                <li>Boosts brand authority, SEO, and marketability in the competitive social and media sectors</li>
-                <li>Perfect for agencies, creators, or established businesses expanding their online presence</li>
+              <li>News/media platforms and opinion sites</li>
+              <li>Community/social apps and forums</li>
+              <li>Civic tech, voter engagement, and NGO platforms</li>
+              <li>Membership and marketplace platforms</li>
             </ul>
-        </section>
-        <div class="info-article">
-            Learn more: <a href="https://corelli.com/domains.html" target="_blank" rel="noopener">How to choose a great domain</a>
+          </div>
+
+          <div class="cta-row">
+            <a class="btn btn-primary" href="#" id="inquireBtn">Make an Offer</a>
+            <a class="btn btn-ghost" href="mailto:domain@thepeople.com?subject=Domain%20Offer%20-%20ThePeople.com">Email Now</a>
+          </div>
+
+          <div style="margin-top:18px">
+            <div class="price">Domain: ThePeople.com</div>
+            <div style="color:var(--muted);font-size:13px;margin-top:6px">Serious offers only. We respond promptly.</div>
+          </div>
         </div>
 
-        <!-- REPLACED: inquiry form removed and replaced with instructions to email the routed alias -->
-        <section class="inquiry-form-section" id="inquiry-form">
-            <h3>Contact Us About ThePeople.com</h3>
+        <div class="card" style="margin-top:18px">
+          <h3 style="margin-top:0">About this domain</h3>
+          <p class="lead">ThePeople.com is a premium, keyword-strong domain that communicates trust and broad appeal — ideal for businesses that want to represent and engage audiences at scale.</p>
+          <ul style="color:var(--muted);margin-top:12px">
+            <li>Short and widely-recognizable</li>
+            <li>Powerful, people-focused brand signal</li>
+            <li>Excellent for media, social, civic, and community use</li>
+          </ul>
+        </div>
+      </div>
 
-            <div class="contact-note" aria-live="polite">
-                <p>
-                    To make an offer to purchase this domain name, please email:
-                </p>
+      <aside class="contact-card">
+        <div class="card">
+          <h3 style="margin-top:0">Contact & Offer</h3>
+          <p style="margin-top:6px;color:var(--muted)">Submit an offer — we'll open your email client with the details prefilled. Or email <a href="mailto:domain@thepeople.com" class="contact-email">domain@thepeople.com</a>.</p>
 
-                <!-- The visible email is constructed by JavaScript below to reduce simple scraping. -->
-                <p>
-                    <a id="contact-email" class="contact-email" href="#" rel="nofollow noopener"></a>
-                    <button id="copy-email" class="copy-btn" type="button" aria-label="Copy email address">Copy</button>
-                </p>
+          <form id="inquiryForm" onsubmit="handleSubmit(event)" aria-label="Domain offer form">
+            <label for="name">Your name</label>
+            <input id="name" name="name" type="text" placeholder="Jane Doe" required />
 
-                <p class="note">
-                    When you email, please include all of the following so we can respond quickly:
-                </p>
+            <label for="email">Your email</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required />
 
-                <ul class="requirements">
-                    <li>Full name</li>
-                    <li>Email address</li>
-                    <li>Telephone number</li>
-                    <li>Your country</li>
-                    <li>Your offer amount (USD)</li>
-                </ul>
-            </div>
-        </section>
-    </main>
-    <footer>
-        &copy; 2025 ThePeople.com &ndash; This domain is for sale.
-        <div class="small-print">information is not shared and privacy will not be violated</div>
-    </footer>
+            <label for="offer">Your offer (USD)</label>
+            <input id="offer" name="offer" type="text" placeholder="Enter your offer (USD)" required />
 
-    <script>
-        // Build the public routed alias in JS to deter simple scrapers.
-        // The address requested: domain@thepeople.com
-        (function () {
-            const parts = { user: "domain", domain: "thepeople.com" }; // public routed alias (do NOT put your private inbox here)
-            const addr = parts.user + "@" + parts.domain;
+            <label for="country">Country</label>
+            <input id="country" name="country" type="text" placeholder="Your country" required />
 
-            const link = document.getElementById('contact-email');
-            link.textContent = addr;
-            link.href = 'mailto:' + addr;
-            link.title = 'Send an email to ' + addr + ' (this is a routed alias)';
+            <label for="phone">Phone number (optional)</label>
+            <input id="phone" name="phone" type="tel" />
 
-            const copyBtn = document.getElementById('copy-email');
-            copyBtn.addEventListener('click', async function () {
-                try {
-                    await navigator.clipboard.writeText(addr);
-                    const prev = copyBtn.textContent;
-                    copyBtn.textContent = 'Copied';
-                    copyBtn.disabled = true;
-                    setTimeout(() => { copyBtn.textContent = prev; copyBtn.disabled = false; }, 1400);
-                } catch (e) {
-                    // fallback: show prompt so user can copy manually
-                    window.prompt('Copy this email address:', addr);
-                }
-            });
-        })();
-    </script>
+            <label for="message">Message (questions, timeline, escrow preference)</label>
+            <textarea id="message" name="message" placeholder="Hi — I'm submitting an offer for ThePeople.com. Please share transfer instructions and next steps."></textarea>
+
+            <button class="btn btn-primary" type="submit" style="width:100%">Send Offer</button>
+          </form>
+
+          <footer>Prefer a direct email? <a href="mailto:domain@thepeople.com" style="color:var(--accent-red)">domain@thepeople.com</a></footer>
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <script>
+    // Compose a mailto: URL from form contents to open user's email client.
+    function handleSubmit(e){
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const offer = document.getElementById('offer').value.trim();
+      const country = document.getElementById('country').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      const message = document.getElementById('message').value.trim();
+
+      const subject = encodeURIComponent('Domain Offer - ThePeople.com');
+      const bodyText =
+        `Name: ${name}\n` +
+        `Email: ${email}\n` +
+        `Offer (USD): ${offer}\n` +
+        `Country: ${country}\n` +
+        `Phone: ${phone || '(not provided)'}\n\n` +
+        `Message:\n${message}\n\n---\nSent from ThePeople.com offer form`;
+
+      const body = encodeURIComponent(bodyText);
+      const mailto = `mailto:domain@thepeople.com?subject=${subject}&body=${body}`;
+      window.location.href = mailto;
+    }
+
+    document.getElementById('inquireBtn').addEventListener('click', function(e){
+      e.preventDefault();
+      const form = document.getElementById('inquiryForm');
+      if(window.innerWidth < 900){
+        form.scrollIntoView({behavior:'smooth', block:'center'});
+        form.querySelector('input').focus();
+      } else {
+        const subject = encodeURIComponent('Domain Offer - ThePeople.com');
+        const body = encodeURIComponent('Hi — I would like to make an offer for ThePeople.com. Please reply with transfer instructions and next steps.');
+        window.location.href = `mailto:domain@thepeople.com?subject=${subject}&body=${body}`;
+      }
+    });
+  </script>
 </body>
 </html>
